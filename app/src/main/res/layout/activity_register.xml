@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fragment
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:name="com.example.helloworld.inputcells.PictureInputCellFragment"
+                android:id="@+id/fragment_head"
+                tools:layout="@layout/fragment_inputcell_picture"
+                android:layout_gravity="center_horizontal" />
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name ="com.example.helloworld.inputcells.SimpleTextInputCellFragment"
+                android:id="@+id/fragment1"
+                tools:layout="@layout/fragment_inputcell_simpletext" />
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name ="com.example.helloworld.inputcells.SimpleTextInputCellFragment"
+                android:id="@+id/fragment2"
+                tools:layout="@layout/fragment_inputcell_simpletext" />
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name ="com.example.helloworld.inputcells.SimpleTextInputCellFragment"
+                android:id="@+id/fragment3"
+                tools:layout="@layout/fragment_inputcell_simpletext" />
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name ="com.example.helloworld.inputcells.SimpleTextInputCellFragment"
+                android:id="@+id/fragment4"
+                tools:layout="@layout/fragment_inputcell_simpletext" />
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="SUBMIT" />
+        </LinearLayout>
+
+</LinearLayout>

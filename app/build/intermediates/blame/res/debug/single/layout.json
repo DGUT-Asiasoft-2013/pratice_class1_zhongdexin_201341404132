@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hello.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\activity_hello.xml"
+    },
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_boot.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\activity_boot.xml"
+    },
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_password_recover_step2.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\fragment_password_recover_step2.xml"
+    },
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_inputcell_simpletext.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\fragment_inputcell_simpletext.xml"
+    },
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_inputcell_picture.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\fragment_inputcell_picture.xml"
+    },
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_password_recover.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\activity_password_recover.xml"
+    },
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_password_recover_step1.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\fragment_password_recover_step1.xml"
+    },
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_version.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\fragment_version.xml"
+    },
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\activity_login.xml"
+    }
+]
