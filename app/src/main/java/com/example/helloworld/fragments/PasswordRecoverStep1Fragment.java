@@ -42,9 +42,19 @@ public class PasswordRecoverStep1Fragment extends Fragment {
         register_email.setEditHint("请输入注册邮箱");
     }
 
-//    public static  interface onGoNextListener
+    public static  interface OnGoNextListener{
+        void onGoNext();
+    }
+
+    OnGoNextListener onGoNextListener ;
+
+    public void setOnGoNextListener(OnGoNextListener onGoNextListener) {
+        this.onGoNextListener = onGoNextListener;
+    }
 
     void goNext() {
-
+        if (onGoNextListener == null) {
+            onGoNextListener.onGoNext();
+        }
     }
 }

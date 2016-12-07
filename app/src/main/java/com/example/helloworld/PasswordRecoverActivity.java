@@ -14,7 +14,7 @@ public class PasswordRecoverActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password_recover);
 
-//        PasswordRecoverStep1Fragment
+//           PasswordRecoverStep1Fragment
 
     }
 
