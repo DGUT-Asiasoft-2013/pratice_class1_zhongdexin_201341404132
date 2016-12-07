@@ -28,6 +28,10 @@
         "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\activity_password_recover.xml"
     },
     {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_main_tabbar.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\fragment_main_tabbar.xml"
+    },
+    {
         "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_password_recover_step1.xml",
         "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\fragment_password_recover_step1.xml"
     },

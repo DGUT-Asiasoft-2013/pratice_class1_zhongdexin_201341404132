@@ -46,9 +46,10 @@ public final class R {
         public static final int activity_register=0x7f030004;
         public static final int fragment_inputcell_picture=0x7f030005;
         public static final int fragment_inputcell_simpletext=0x7f030006;
-        public static final int fragment_password_recover_step1=0x7f030007;
-        public static final int fragment_password_recover_step2=0x7f030008;
-        public static final int fragment_version=0x7f030009;
+        public static final int fragment_main_tabbar=0x7f030007;
+        public static final int fragment_password_recover_step1=0x7f030008;
+        public static final int fragment_password_recover_step2=0x7f030009;
+        public static final int fragment_version=0x7f03000a;
     }
     public static final class string {
         public static final int app_name=0x7f050000;
