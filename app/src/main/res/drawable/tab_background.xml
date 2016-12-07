@@ -7,5 +7,6 @@
             </shape>
 
     </item>
+    <!--没被选中是背景为透明-->
     <item android:drawable="@android:color/transparent" />
 </selector>

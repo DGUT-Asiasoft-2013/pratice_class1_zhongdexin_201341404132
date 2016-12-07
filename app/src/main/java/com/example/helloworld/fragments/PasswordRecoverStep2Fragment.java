@@ -27,12 +27,12 @@ public class PasswordRecoverStep2Fragment extends Fragment {
         step2_newpassword = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_newpassword);
         Step2_newpasswordrepeated = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_newpasswordrepeated);
 
-        view.findViewById(R.id.step2_finish).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
+//        view.findViewById(R.id.step2_finish).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
 
 
         return view;

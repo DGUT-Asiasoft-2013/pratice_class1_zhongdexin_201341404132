@@ -53,7 +53,7 @@ public class PasswordRecoverStep1Fragment extends Fragment {
     }
 
     void goNext() {
-        if (onGoNextListener == null) {
+        if (onGoNextListener != null) {
             onGoNextListener.onGoNext();
         }
     }
