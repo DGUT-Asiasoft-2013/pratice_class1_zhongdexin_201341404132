@@ -15,17 +15,20 @@ import com.example.helloworld.inputcells.SimpleTextInputCellFragment;
 
 public class PasswordRecoverStep2Fragment extends Fragment {
 
+    View view;
     SimpleTextInputCellFragment step2_PIN;
     SimpleTextInputCellFragment step2_newpassword;
     SimpleTextInputCellFragment Step2_newpasswordrepeated;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_password_recover_step1, null);
+        if (view == null) {
+            view = inflater.inflate(R.layout.fragment_password_recover_step2, null);
 
-        step2_PIN = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_PIN);
-        step2_newpassword = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_newpassword);
-        Step2_newpasswordrepeated = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_newpasswordrepeated);
+
+            step2_PIN = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_PIN);
+            step2_newpassword = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_newpassword);
+            Step2_newpasswordrepeated = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_newpasswordrepeated);
 
 //        view.findViewById(R.id.step2_finish).setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -34,7 +37,7 @@ public class PasswordRecoverStep2Fragment extends Fragment {
 //            }
 //        });
 
-
+        }
         return view;
     }
 

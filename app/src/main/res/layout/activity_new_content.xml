@@ -22,7 +22,7 @@
             android:layout_height="match_parent"
             android:layout_gravity="right"
             android:text="Send!"
-            android:id="@+id/note_btnsend"/>
+            android:id="@+id/newcontent_btnsend"/>
         
         <view
             android:layout_width="match_parent"

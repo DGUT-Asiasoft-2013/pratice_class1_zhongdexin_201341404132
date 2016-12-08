@@ -52,8 +52,8 @@ public class PictureInputCellFragment extends Fragment {
 
     private void onPictureClick() {
         String[] items = {
-                "相册",
-                "拍照"
+                "拍照",
+                "相册"
         };
 
         new AlertDialog.Builder(getActivity())

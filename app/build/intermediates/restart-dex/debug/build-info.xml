@@ -5,22 +5,22 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.2"
-    timestamp="11333834025532"
+    timestamp="7487323387855"
     token="-1869788945923037710"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="274" />
+        duration="270" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="30" />
+        duration="38" />
     <task
         name="verifier"
-        duration="12" />
+        duration="5" />
 
     <artifact
         location="D:\workspace\HelloWorld\app\build\outputs\apk\app-debug.apk"

@@ -11,7 +11,14 @@
                     "endOffset": 98
                 },
                 "from": {
-                    "file": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 58,
+                        "endColumn": 47,
+                        "endOffset": 101
+                    }
                 }
             },
             {
@@ -23,7 +30,14 @@
                     "endOffset": 151
                 },
                 "from": {
-                    "file": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\values\\strings.xml"
+                    "file": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endColumn": 52,
+                        "endOffset": 155
+                    }
                 }
             },
             {

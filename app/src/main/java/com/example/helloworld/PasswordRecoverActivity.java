@@ -43,7 +43,7 @@ public class PasswordRecoverActivity extends Activity {
                         R.animator.slide_in_right,
                         R.animator.slide_out_left
                 ).replace(R.id.container,step2)
-                .addToBackStack(null)       //返回栈，按返回键返回step1界面
+                .addToBackStack(null)       //返回栈，按返回键返回step1界面,或者错误返回step1
                 .commit();
     }
 }
