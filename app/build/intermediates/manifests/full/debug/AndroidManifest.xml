@@ -32,6 +32,9 @@
         <activity
             android:name="com.example.helloworld.HelloWorldActivity"
             android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.example.helloworld.PasswordRecoverActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
     </application>
 
 </manifest>

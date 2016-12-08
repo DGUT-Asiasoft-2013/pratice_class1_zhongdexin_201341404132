@@ -58,6 +58,7 @@ public class MainTabbarFragment extends Fragment {
     private void onTabbarClick(View tab) {
         int selectedIndex = -1;
 
+        //设置5个按钮选取状态的背景色
         for (int i=0;i<tabbar.length;i++) {
             View temp = tabbar[i];
 
@@ -69,6 +70,8 @@ public class MainTabbarFragment extends Fragment {
             }
         }
 
+
+        //回调传值后，点击view后调用重写的onTabbarSelected方法
         if (onTabbarSelectedListener != null && selectedIndex>=0) {
             onTabbarSelectedListener.onTabbarSelected(selectedIndex);
         }

@@ -21,7 +21,7 @@ public class PasswordRecoverStep2Fragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_password_recover_step1, container);
+        View view = inflater.inflate(R.layout.fragment_password_recover_step1, null);
 
         step2_PIN = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_PIN);
         step2_newpassword = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_newpassword);

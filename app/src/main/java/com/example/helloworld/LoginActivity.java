@@ -35,7 +35,7 @@ public class LoginActivity extends Activity {
 		findViewById(R.id.forgetpassword).setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				goRecoverRassword();
+				goRecoverPassword();
 			}
 		});
 
@@ -55,7 +55,7 @@ public class LoginActivity extends Activity {
 		login_password.setEditInputType(true);
 	}
 
-	private void gohello() {
+	void gohello() {
 		Intent itnt = new Intent(this,HelloWorldActivity.class);
 		startActivity(itnt);
 	}
@@ -65,7 +65,7 @@ public class LoginActivity extends Activity {
 		startActivity(itnt);
 	}
 
-	private void goRecoverRassword() {
+	void goRecoverPassword() {
 		Intent itnt = new Intent(this,PasswordRecoverActivity.class);
 		startActivity(itnt);
 	}

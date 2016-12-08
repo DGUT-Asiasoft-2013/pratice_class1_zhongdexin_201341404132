@@ -20,6 +20,7 @@ public class PasswordRecoverActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_password_recover);
 
+        //回调
         step1.setOnGoNextListener(new PasswordRecoverStep1Fragment.OnGoNextListener() {
             @Override
             public void onGoNext() {                //重写OnGoNextListener的onGoNext方法，传递进PasswordRecoverStep1Fragment中

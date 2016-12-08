@@ -5,16 +5,31 @@
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="44dp">
+        android:layout_height="44dp"
+        android:background="@android:color/white"
+        android:id="@+id/navbar">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/black"
+            android:text="FEEDS"
+            android:textSize="18sp"/>
 
-
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@android:color/darker_gray" />
 
     </FrameLayout>
 
     <ListView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        android:id="@+id/bar_feeds_list">
 
     </ListView>
 

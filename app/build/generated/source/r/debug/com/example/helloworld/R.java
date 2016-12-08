@@ -8,6 +8,13 @@
 package com.example.helloworld;
 
 public final class R {
+    public static final class animator {
+        public static final int slide_in_bottom=0x7f040000;
+        public static final int slide_in_left=0x7f040001;
+        public static final int slide_in_right=0x7f040002;
+        public static final int slide_out_left=0x7f040003;
+        public static final int slide_out_right=0x7f040004;
+    }
     public static final class attr {
     }
     public static final class drawable {
@@ -15,56 +22,65 @@ public final class R {
         public static final int tab_background=0x7f020001;
     }
     public static final class id {
-        public static final int btn_login=0x7f060005;
-        public static final int btn_register=0x7f060004;
-        public static final int btn_submit=0x7f06000c;
-        public static final int container=0x7f060006;
-        public static final int forgetpassword=0x7f060003;
-        public static final int frag_version=0x7f060000;
-        public static final int fragment1=0x7f060008;
-        public static final int fragment2=0x7f060009;
-        public static final int fragment3=0x7f06000a;
-        public static final int fragment4=0x7f06000b;
-        public static final int fragment_head=0x7f060007;
-        public static final int headimage=0x7f06000f;
-        public static final int input_password=0x7f060002;
-        public static final int input_username=0x7f060001;
-        public static final int label=0x7f060010;
-        public static final int main_tab_btnnew=0x7f060014;
-        public static final int main_tab_feeds=0x7f060012;
-        public static final int main_tab_me=0x7f060016;
-        public static final int main_tab_notes=0x7f060013;
-        public static final int main_tab_search=0x7f060015;
-        public static final int register_email=0x7f060017;
-        public static final int step1_next=0x7f060018;
-        public static final int step2_PIN=0x7f060019;
-        public static final int step2_finish=0x7f06001c;
-        public static final int step2_newpassword=0x7f06001a;
-        public static final int step2_newpasswordrepeated=0x7f06001b;
-        public static final int text=0x7f060011;
-        public static final int tips=0x7f06000e;
-        public static final int tittle=0x7f06000d;
+        public static final int bar_feeds_list=0x7f07001d;
+        public static final int btn_login=0x7f070008;
+        public static final int btn_register=0x7f070007;
+        public static final int btn_submit=0x7f070012;
+        public static final int container=0x7f07000c;
+        public static final int content=0x7f070002;
+        public static final int feed_text=0x7f070001;
+        public static final int forgetpassword=0x7f070006;
+        public static final int frag_version=0x7f070000;
+        public static final int fragment1=0x7f07000e;
+        public static final int fragment2=0x7f07000f;
+        public static final int fragment3=0x7f070010;
+        public static final int fragment4=0x7f070011;
+        public static final int fragment_head=0x7f07000d;
+        public static final int headimage=0x7f070015;
+        public static final int input_password=0x7f070005;
+        public static final int input_username=0x7f070004;
+        public static final int label=0x7f070016;
+        public static final int main_tab_btnnew=0x7f07001a;
+        public static final int main_tab_feeds=0x7f070018;
+        public static final int main_tab_me=0x7f07001c;
+        public static final int main_tab_notes=0x7f070019;
+        public static final int main_tab_search=0x7f07001b;
+        public static final int main_tabber=0x7f070003;
+        public static final int navbar=0x7f070009;
+        public static final int note_btnsend=0x7f07000a;
+        public static final int note_text=0x7f07000b;
+        public static final int register_email=0x7f07001e;
+        public static final int step1_next=0x7f07001f;
+        public static final int step2_PIN=0x7f070020;
+        public static final int step2_finish=0x7f070023;
+        public static final int step2_newpassword=0x7f070021;
+        public static final int step2_newpasswordrepeated=0x7f070022;
+        public static final int text=0x7f070017;
+        public static final int tips=0x7f070014;
+        public static final int tittle=0x7f070013;
     }
     public static final class layout {
         public static final int activity_boot=0x7f030000;
-        public static final int activity_hello=0x7f030001;
-        public static final int activity_login=0x7f030002;
-        public static final int activity_password_recover=0x7f030003;
-        public static final int activity_register=0x7f030004;
-        public static final int fragment_inputcell_picture=0x7f030005;
-        public static final int fragment_inputcell_simpletext=0x7f030006;
-        public static final int fragment_main_tabbar=0x7f030007;
-        public static final int fragment_page_feed_list=0x7f030008;
-        public static final int fragment_page_my_profile=0x7f030009;
-        public static final int fragment_page_note_list=0x7f03000a;
-        public static final int fragment_page_search_page=0x7f03000b;
-        public static final int fragment_password_recover_step1=0x7f03000c;
-        public static final int fragment_password_recover_step2=0x7f03000d;
-        public static final int fragment_version=0x7f03000e;
+        public static final int activity_feed_content=0x7f030001;
+        public static final int activity_hello=0x7f030002;
+        public static final int activity_login=0x7f030003;
+        public static final int activity_new_content=0x7f030004;
+        public static final int activity_password_recover=0x7f030005;
+        public static final int activity_register=0x7f030006;
+        public static final int fragment_inputcell_picture=0x7f030007;
+        public static final int fragment_inputcell_simpletext=0x7f030008;
+        public static final int fragment_main_tabbar=0x7f030009;
+        public static final int fragment_page_feed_list=0x7f03000a;
+        public static final int fragment_page_my_profile=0x7f03000b;
+        public static final int fragment_page_note_list=0x7f03000c;
+        public static final int fragment_page_search_page=0x7f03000d;
+        public static final int fragment_password_recover_step1=0x7f03000e;
+        public static final int fragment_password_recover_step2=0x7f03000f;
+        public static final int fragment_version=0x7f030010;
     }
     public static final class string {
-        public static final int app_name=0x7f050000;
-        public static final int hello_world=0x7f050001;
+        public static final int app_name=0x7f060000;
+        public static final int hello_world=0x7f060001;
     }
     public static final class style {
         /**  API 11 theme customizations can go here. 
@@ -75,7 +91,7 @@ public final class R {
             backward-compatibility can go here.
         
          */
-        public static final int AppBaseTheme=0x7f040000;
-        public static final int AppTheme=0x7f040001;
+        public static final int AppBaseTheme=0x7f050000;
+        public static final int AppTheme=0x7f050001;
     }
 }

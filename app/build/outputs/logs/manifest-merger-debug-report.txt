@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:2:1-40:12
 	package
 		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:7:5-9:41
 		INJECTED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml
 		INJECTED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml
 application
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:11:5-35:19
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:11:5-38:19
 	android:label
 		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:14:9-41
 	android:allowBackup
@@ -71,3 +71,9 @@ ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:32:9-34:72
 		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:34:13-60
 	android:name
 		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:33:13-69
+activity#com.example.helloworld.PasswordRecoverActivity
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:35:9-37:63
+	android:theme
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:37:13-60
+	android:name
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:36:13-52

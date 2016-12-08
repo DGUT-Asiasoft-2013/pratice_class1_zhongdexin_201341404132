@@ -4,12 +4,20 @@
         "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\activity_hello.xml"
     },
     {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_new_content.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\activity_new_content.xml"
+    },
+    {
         "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_boot.xml",
         "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\activity_boot.xml"
     },
     {
         "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_page_feed_list.xml",
         "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\fragment_page_feed_list.xml"
+    },
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_feed_content.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\activity_feed_content.xml"
     },
     {
         "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_password_recover_step2.xml",
