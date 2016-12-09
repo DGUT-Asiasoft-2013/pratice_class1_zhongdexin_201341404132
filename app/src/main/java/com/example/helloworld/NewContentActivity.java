@@ -19,6 +19,7 @@ public class NewContentActivity extends Activity {
             @Override
             public void onClick(View v) {
                 finish();
+                //第一个参数是第一个activity进入时的动画，第二个参数则是第二个activity退出时的动画。
                 overridePendingTransition(R.anim.none,R.anim.slide_out_bottom);
             }
         });

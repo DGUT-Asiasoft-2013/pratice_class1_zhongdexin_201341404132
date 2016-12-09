@@ -40,7 +40,36 @@ public class MainTabbarFragment extends Fragment {
             });
         }
 
+        main_tab_btnnew.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onNewClicked();
+            }
+        });
+
         return view;
+    }
+
+    public  void setSelectedItem(int index){
+        if (index >= 0 && index < tabbar.length) {
+            onTabbarClick(tabbar[index]);
+        }
+    }
+
+    private void onNewClicked() {
+        if (onNewClickListener != null) {
+            onNewClickListener.onNewClicked();
+        }
+    }
+
+    public static interface OnNewClickListener{
+        void onNewClicked();
+    }
+
+    OnNewClickListener onNewClickListener;
+
+    public void setOnNewClickListener(OnNewClickListener onNewClickListener) {
+        this.onNewClickListener = onNewClickListener;
     }
 
     public static interface OnTabbarSelectedListener{
