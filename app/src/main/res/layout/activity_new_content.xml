@@ -24,11 +24,11 @@
             android:text="Send!"
             android:id="@+id/newcontent_btnsend"/>
         
-        <view
+        <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_gravity="bottom"
-            android:background="@android:color/darker_gray"></view>
+            android:background="@android:color/darker_gray"></View>
 
 
     </FrameLayout>

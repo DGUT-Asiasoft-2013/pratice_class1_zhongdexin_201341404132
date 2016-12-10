@@ -8,6 +8,8 @@
         android:minSdkVersion="19"
         android:targetSdkVersion="19" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name="com.android.tools.fd.runtime.BootstrapApplication"
         android:allowBackup="true"
@@ -35,6 +37,12 @@
             android:theme="@android:style/Theme.NoTitleBar" />
         <activity
             android:name="com.example.helloworld.PasswordRecoverActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.example.helloworld.FeedContentActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.example.helloworld.NewContentActivity"
             android:theme="@android:style/Theme.NoTitleBar" />
     </application>
 

@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:2:1-40:12
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml
@@ -25,55 +25,71 @@ ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:7:5-9:41
 		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:8:9-35
 		INJECTED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml
 		INJECTED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:11:22-64
 application
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:11:5-38:19
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:13:5-46:19
 	android:label
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:16:9-41
 	android:allowBackup
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:14:9-35
 	android:icon
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:13:9-45
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:15:9-45
 	android:theme
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:15:9-40
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:17:9-40
 activity#com.example.helloworld.BootActivity
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:16:9-25:20
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:18:9-27:20
 	android:label
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:18:13-45
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:20:13-45
 	android:theme
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:19:13-60
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:21:13-60
 	android:name
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:17:13-41
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:19:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:20:13-24:29
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:22:13-26:29
 action#android.intent.action.MAIN
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:21:17-69
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:23:17-69
 	android:name
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:21:25-66
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:23:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:23:17-77
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:23:27-74
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:25:27-74
 activity#com.example.helloworld.LoginActivity
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:26:9-28:72
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:28:9-30:72
 	android:theme
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:28:13-60
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:30:13-60
 	android:name
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:27:13-64
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:29:13-64
 activity#com.example.helloworld.RegisterActivity
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:29:9-31:72
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:31:9-33:72
 	android:theme
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:31:13-60
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:33:13-60
 	android:name
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:30:13-67
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:32:13-67
 activity#com.example.helloworld.HelloWorldActivity
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:32:9-34:72
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:34:9-36:72
 	android:theme
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:34:13-60
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:36:13-60
 	android:name
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:33:13-69
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:35:13-69
 activity#com.example.helloworld.PasswordRecoverActivity
-ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:35:9-37:63
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:37:9-39:63
 	android:theme
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:37:13-60
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:39:13-60
 	android:name
-		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:36:13-52
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:38:13-52
+activity#com.example.helloworld.FeedContentActivity
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:40:9-42:63
+	android:theme
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:42:13-60
+	android:name
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:41:13-48
+activity#com.example.helloworld.NewContentActivity
+ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:43:9-45:63
+	android:theme
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:45:13-60
+	android:name
+		ADDED from D:\workspace\HelloWorld\app\src\main\AndroidManifest.xml:44:13-47
