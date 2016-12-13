@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.helloworld.api.Service;
 import com.example.helloworld.inputcells.PictureInputCellFragment;
 import com.example.helloworld.inputcells.SimpleTextInputCellFragment;
 
@@ -75,7 +76,7 @@ public class RegisterActivity extends Activity {
 		String name = fragidname.getText();
 		String email = fragemail.getText();
 
-		OkHttpClient client = new OkHttpClient.Builder().build();
+		OkHttpClient client = Service.getShareClient();
 
 		//请求数据对象
 		MultipartBody.Builder requestBody = new MultipartBody.Builder()
@@ -97,8 +98,9 @@ public class RegisterActivity extends Activity {
 		}
 
 
-		Request request = new Request.Builder()
-				.url("http://172.27.0.51:8080/membercenter/api/register")
+//		Request request = new Request.Builder()
+//				.url("http://172.27.0.51:8080/membercenter/api/register")
+		Request request = Service.requestBuilderWithApi("register")
 				.method("POST",null)
 				.post(requestBody.build())
 				.build();

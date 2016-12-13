@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.example.helloworld.api.Service;
+
 import java.io.IOException;
 
 import okhttp3.Call;
@@ -20,14 +22,14 @@ public class BootActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_boot);
-		
-		
+
+
 	}
-	
+
 	@Override
 	protected void onResume() {
 		super.onResume();
-		
+
 //		Handler handler = new Handler();
 //		handler.postDelayed(new Runnable() {
 //			private int abcd = 0;
@@ -37,11 +39,12 @@ public class BootActivity extends Activity {
 //			}
 //		}, 1000);
 
-		OkHttpClient client = new OkHttpClient();
+		OkHttpClient client = Service.getShareClient();
 
 		//请求对象
-		Request request = new Request.Builder()
-				.url("http://172.27.0.51:8080/membercenter/api/hello")
+//		Request request = new Request.Builder()
+//				.url("http://172.27.0.51:8080/membercenter/api/hello")
+		Request request = Service.requestBuilderWithApi("hello")
 				.method("GET",null)
 				.build();
 
@@ -76,7 +79,7 @@ public class BootActivity extends Activity {
 			}
 		});
 	}
-	
+
 	void startLoginActivity(){
 		Intent itnt = new Intent(this, LoginActivity.class);
 		startActivity(itnt);
