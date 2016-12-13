@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@android:color/background_light"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@android:color/white"
             android:orientation="vertical">
 
             <fragment
@@ -47,11 +55,21 @@
                 android:name ="com.example.helloworld.inputcells.SimpleTextInputCellFragment"
                 android:id="@+id/fragment4"
                 tools:layout="@layout/fragment_inputcell_simpletext" />
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name ="com.example.helloworld.inputcells.SimpleTextInputCellFragment"
+                android:id="@+id/fragment5"
+                tools:layout="@layout/fragment_inputcell_simpletext" />
+
             <Button
                 android:id="@+id/btn_submit"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:text="SUBMIT" />
+                android:text="提交" />
         </LinearLayout>
 
-</LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

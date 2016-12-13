@@ -39,8 +39,9 @@ public class BootActivity extends Activity {
 
 		OkHttpClient client = new OkHttpClient();
 
+		//请求对象
 		Request request = new Request.Builder()
-				.url("http://172.27.0.56:8080/membercenter/api/hello")
+				.url("http://172.27.0.51:8080/membercenter/api/hello")
 				.method("GET",null)
 				.build();
 
@@ -60,18 +61,18 @@ public class BootActivity extends Activity {
 			public void onResponse(Call call, final Response response) throws IOException {
 				Log.d("response", response.toString());
 
-//				BootActivity.this.runOnUiThread(new Runnable() {
-//
-//					@Override
-//					public void run() {
-//						try {
-//							Toast.makeText(BootActivity.this, response.body().string(), Toast.LENGTH_SHORT).show();
-//						} catch (IOException e) {
-//							e.printStackTrace();
-//						}
-//						startLoginActivity();
-//					}
-//				});
+				BootActivity.this.runOnUiThread(new Runnable() {
+
+					@Override
+					public void run() {
+						try {
+							Toast.makeText(BootActivity.this, response.body().string(), Toast.LENGTH_SHORT).show();
+						} catch (IOException e) {
+							e.printStackTrace();
+						}
+						startLoginActivity();
+					}
+				});
 			}
 		});
 	}

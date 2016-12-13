@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import com.example.helloworld.R;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 /**
@@ -30,6 +31,8 @@ public class PictureInputCellFragment extends Fragment {
 
     ImageView picture;
     TextView tittle,tips;
+
+    byte[] pngData;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -77,6 +80,12 @@ public class PictureInputCellFragment extends Fragment {
                 }).setNegativeButton("取消",null).show();
     }
 
+    void saveBitmap(Bitmap bmp) {
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        bmp.compress(Bitmap.CompressFormat.PNG, 100, baos);
+        pngData = baos.toByteArray();
+    }
+
     void takePhoto() {
         Intent itnt = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         startActivityForResult(itnt,REQUESTCODE_CAMERA);
@@ -96,15 +105,22 @@ public class PictureInputCellFragment extends Fragment {
         if (requestCode == REQUESTCODE_CAMERA) {
 
             Bitmap bmp = (Bitmap) data.getExtras().get("data");
+            saveBitmap(bmp);
+
             picture.setImageBitmap(bmp);
         } else if (requestCode == REQUESTCODE_ALBUNM) {
             try {
                 Bitmap bmp = MediaStore.Images.Media.getBitmap(getActivity().getContentResolver(), data.getData());
+                saveBitmap(bmp);
                 picture.setImageBitmap(bmp);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
+    }
+
+    public byte[] getPngData() {
+        return pngData;
     }
 
     public void setTittleText(String s) {
