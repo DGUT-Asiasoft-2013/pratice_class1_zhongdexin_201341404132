@@ -44,10 +44,12 @@ public class Service {
         .cookieJar(new JavaNetCookieJar(cookieManager)).build();
     }
 
+    //返回客户端连接
     public static OkHttpClient getShareClient() {
         return  client;
     }
 
+    //返回request地址
     public static Request.Builder requestBuilderWithApi(String api) {
         return new Request.Builder()
                 .url(serverAddress + "api/" + api);

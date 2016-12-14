@@ -66,5 +66,9 @@
     {
         "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
         "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\workspace\\HelloWorld\\app\\build\\intermediates\\res\\merged\\debug\\layout\\widget_feed_item.xml",
+        "source": "D:\\workspace\\HelloWorld\\app\\src\\main\\res\\layout\\widget_feed_item.xml"
     }
 ]

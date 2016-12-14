@@ -9,4 +9,4 @@
         
     </style></file><file path="D:\workspace\HelloWorld\app\src\main\res\values-v14\styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
         
-    </style></file></source><source path="D:\workspace\HelloWorld\app\build\generated\res\rs\debug"/><source path="D:\workspace\HelloWorld\app\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="D:\workspace\HelloWorld\app\src\debug\res"/></dataSet><mergedItems/></merger>
+    </style></file><file name="widget_feed_item" path="D:\workspace\HelloWorld\app\src\main\res\layout\widget_feed_item.xml" qualifiers="" type="layout"/></source><source path="D:\workspace\HelloWorld\app\build\generated\res\rs\debug"/><source path="D:\workspace\HelloWorld\app\build\generated\res\resValues\debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="D:\workspace\HelloWorld\app\src\debug\res"/></dataSet><mergedItems/></merger>

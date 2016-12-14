@@ -54,7 +54,9 @@ public class HelloWorldActivity extends Activity {
     protected void onResume() {
         super.onResume();
 
-        mainTabbarFragment.setSelectedItem(0);
+        if (mainTabbarFragment.getSelectedIndex() < 0) {
+            mainTabbarFragment.setSelectedItem(0);
+        }
     }
 
     private void changeContentFragment(int index) {
