@@ -1,5 +1,6 @@
 package com.example.helloworld.fragments;
 
+import android.app.AlertDialog;
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -30,16 +31,46 @@ public class PasswordRecoverStep2Fragment extends Fragment {
             step2_newpassword = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_newpassword);
             Step2_newpasswordrepeated = (SimpleTextInputCellFragment) getFragmentManager().findFragmentById(R.id.step2_newpasswordrepeated);
 
-//        view.findViewById(R.id.step2_finish).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//            }
-//        });
+        view.findViewById(R.id.step2_finish).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                onSubmitClick();
+            }
+        });
 
         }
         return view;
     }
+
+    public String getText() {
+        return step2_newpassword.getText();
+    }
+
+    private void onSubmitClick() {
+
+        if (step2_newpassword.getText().equals(Step2_newpasswordrepeated.getText())) {
+            if (onSubmitClickListener != null) {
+                onSubmitClickListener.onSubmitClicked();
+            }
+        } else {
+            new AlertDialog.Builder(getActivity())
+                    .setMessage("重复密码不一致")
+                    .show();
+        }
+    }
+
+    public static  interface OnSubmitClickListener{
+        void onSubmitClicked();
+    };
+
+    OnSubmitClickListener onSubmitClickListener;
+
+    public void setOnSubmitClickListener(OnSubmitClickListener onSubmitClickListener) {
+        this.onSubmitClickListener = onSubmitClickListener;
+    }
+
+
 
     @Override
     public void onResume() {

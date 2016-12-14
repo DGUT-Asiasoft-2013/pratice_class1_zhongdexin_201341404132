@@ -3,8 +3,18 @@ package com.example.helloworld;
 import android.app.Activity;
 import android.os.Bundle;
 
+import com.example.helloworld.api.Service;
 import com.example.helloworld.fragments.PasswordRecoverStep1Fragment;
 import com.example.helloworld.fragments.PasswordRecoverStep2Fragment;
+
+import java.io.IOException;
+
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.MultipartBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 
 /**
  * Created by Administrator on 2016/12/6.
@@ -28,10 +38,41 @@ public class PasswordRecoverActivity extends Activity {
             }
         });
 
+        step2.setOnSubmitClickListener(new PasswordRecoverStep2Fragment.OnSubmitClickListener() {
+            @Override
+            public void onSubmitClicked() {
+                goSubmit();
+            }
+        });
+
+
         //用step1替换该布局中的container，step1中有button添加了onclick事件
         //onclick事件内执行goNext方法，goNext方法中包含onGoNext方法
         getFragmentManager().beginTransaction().replace(R.id.container,step1).commit();
 
+    }
+
+    private void goSubmit() {
+        OkHttpClient client = Service.getShareClient();
+        MultipartBody body = new MultipartBody.Builder()
+                .addFormDataPart("email",step1.getText())
+                .addFormDataPart("passwordHash",MD5.getMD5(step2.getText()))
+                .build();
+
+        Request request = Service.requestBuilderWithApi("passwordrecover")
+                .post(body).build();
+
+        client.newCall(request).enqueue(new Callback() {
+            @Override
+            public void onFailure(Call call, IOException e) {
+
+            }
+
+            @Override
+            public void onResponse(Call call, Response response) throws IOException {
+
+            }
+        });
     }
 
     void goStep2() {

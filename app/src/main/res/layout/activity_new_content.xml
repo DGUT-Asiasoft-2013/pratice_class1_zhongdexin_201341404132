@@ -38,18 +38,38 @@
         android:layout_height="match_parent"
         android:layout_marginTop="44dp">
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/note_text"
+            android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:id="@+id/note_title"
             android:background="@android:color/transparent"
-            android:ems="10"
-            android:gravity="top|left"
-            android:inputType="textMultiLine"
+            android:text="标题"
+            android:textColor="@android:color/black"
             android:padding="8dp"/>
 
-        <requestFocus />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_margin="4dp"
+                android:background="@android:color/darker_gray" />
 
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/note_text"
+                android:background="@android:color/transparent"
+                android:gravity="top|left"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:padding="8dp"/>
+
+
+        </LinearLayout>
     </ScrollView>
 
 </FrameLayout>

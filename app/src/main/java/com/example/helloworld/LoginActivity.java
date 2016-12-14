@@ -123,7 +123,7 @@ public class LoginActivity extends Activity {
 					public void run() {
 						dlg.dismiss();
 						new AlertDialog.Builder(LoginActivity.this)
-								.setMessage("Hello" + user.getName())
+								.setMessage("Hello," + user.getName())
 								.setPositiveButton("OK", new DialogInterface.OnClickListener() {
 									@Override
 									public void onClick(DialogInterface dialog, int which) {
