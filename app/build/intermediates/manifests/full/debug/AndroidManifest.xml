@@ -43,6 +43,9 @@
         <activity
             android:name="com.example.helloworld.NewContentActivity"
             android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.example.helloworld.NewCommentActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
     </application>
 
 </manifest>

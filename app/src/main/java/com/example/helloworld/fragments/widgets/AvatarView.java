@@ -121,7 +121,7 @@ public class AvatarView extends View {
         });
     }
 
-    //画圆形头像框
+    //画圆形头像框,调用AvatarView是自动加载draw函数
     public void draw(Canvas canvas) {
         super.draw(canvas);
         if (paint != null) {
